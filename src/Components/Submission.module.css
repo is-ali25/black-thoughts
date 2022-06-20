@@ -1,0 +1,54 @@
+.submission {
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    min-width: 40vw;
+    background-color: goldenrod;
+    z-index: 1;
+    order: 1;
+    animation: annotation;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+
+    /* border: solid 4px chartreuse; */
+}
+
+@keyframes annotation {
+    from {height: 0%}
+    to {height: 100%}
+}
+
+#submissionForm {
+    position: relative;
+    top: 10vh;
+    justify-content: center;
+    justify-self: center;
+}
+
+input {
+    display: inline-block;
+    position: relative;
+    /* background-color: rgba(209, 198, 170, 0.39); */
+    background-color: rgba(128, 128, 128, 0.686);
+    width: 25vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+}
+
+textarea {
+    display: inline-block;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.686);
+    width: 25vw;
+    height: 15vh;
+    margin-bottom: 3vh;
+}
+
+input::placeholder {
+    color: black;
+    font-family: Arial, sans-serif
+}
+
+textarea::placeholder {
+    color: black;
+    font-family: Arial, sans-serif
+}

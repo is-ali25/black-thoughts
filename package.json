@@ -2,16 +2,30 @@
   "name": "black-thoughts",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+    "bezier-js": "4.0.3"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "clojure": "0.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "mongodb": "^4.3.1",
+    "mongoose": "^5.13.7",
+    "npm-force-resolutions": "0.0.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-force-graph": "^1.41.7",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

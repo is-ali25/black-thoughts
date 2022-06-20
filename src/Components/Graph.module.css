@@ -1,0 +1,6 @@
+.graph {
+    grid-column: 1/ span 1;
+    order: 0;
+    white-space: pre-wrap;
+    /* border: solid 4px blueviolet; */
+}

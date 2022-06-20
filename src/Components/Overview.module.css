@@ -1,0 +1,26 @@
+.overview {
+    grid-column-start: 2/span 1;
+    grid-row-start: 1/span 1;
+    background-color: brown;
+    z-index: 0;
+    order: 1;
+    animation: annotation;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    white-space: pre-wrap;
+
+    /* border: solid 4px goldenrod; */
+}
+
+h3 {
+    margin-top: 7vh;
+}
+
+a {
+    color: black;
+}
+
+@keyframes annotation {
+    from {height: 0%}
+    to {height: 100%}
+}
