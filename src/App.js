@@ -34,7 +34,7 @@ function App() {
 
   //gets data from database on startup, then uses said data to update the nodes state array
   useEffect(async () => {
-    await axios.get('http://localhost:5001/')
+    await axios.get('http://localhost:5000/')
     .then(res => {
       if(res.data.length > 0) {
         setNodes(Utils.nodeAddition(res.data))

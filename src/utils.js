@@ -65,8 +65,8 @@ export function createAuthorMap(nodes) {
 export function preexistent(newEdge, array) {
     let result = false
     array.forEach(edge => {
-      if (edge['source'] == newEdge['source'] &&
-          edge['target'] == newEdge['target']) {
+      if (edge['source'] === newEdge['source'] &&
+          edge['target'] === newEdge['target']) {
             result = true
           }
     })
