@@ -14,7 +14,8 @@ app.use(cors())
 app.use(express.json())
 
 // //connect to database
-mongoose.connect('mongodb+srv://IsAli:Nacho!25@cluster0.7mqyc.mongodb.net/thoughtMetadata', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true})
+const URL = process.env.DB_CONNECTION
+mongoose.connect(URL, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true})
 const connection = mongoose.connection
 connection.once('open', () => {console.log('successfully connected to MongoDB database')})
 
