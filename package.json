@@ -2,7 +2,7 @@
   "name": "black-thoughts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://is-ali25.github.io/black-thoughts-local",
+  "homepage": "https://is-ali25.github.io/black-thoughts",
   "resolutions": {
     "bezier-js": "4.0.3"
   },
