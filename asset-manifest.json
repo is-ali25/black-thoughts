@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/black-thoughts/static/css/main.d8389573.chunk.css",
-    "main.js": "/black-thoughts/static/js/main.e151501b.chunk.js",
-    "main.js.map": "/black-thoughts/static/js/main.e151501b.chunk.js.map",
+    "main.css": "/black-thoughts/static/css/main.ee63fb94.chunk.css",
+    "main.js": "/black-thoughts/static/js/main.4fa6cd1e.chunk.js",
+    "main.js.map": "/black-thoughts/static/js/main.4fa6cd1e.chunk.js.map",
     "runtime-main.js": "/black-thoughts/static/js/runtime-main.7b89ae61.js",
     "runtime-main.js.map": "/black-thoughts/static/js/runtime-main.7b89ae61.js.map",
     "static/js/2.9ec1d44d.chunk.js": "/black-thoughts/static/js/2.9ec1d44d.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.d0953840.chunk.js": "/black-thoughts/static/js/3.d0953840.chunk.js",
     "static/js/3.d0953840.chunk.js.map": "/black-thoughts/static/js/3.d0953840.chunk.js.map",
     "index.html": "/black-thoughts/index.html",
-    "static/css/main.d8389573.chunk.css.map": "/black-thoughts/static/css/main.d8389573.chunk.css.map",
+    "static/css/main.ee63fb94.chunk.css.map": "/black-thoughts/static/css/main.ee63fb94.chunk.css.map",
     "static/js/2.9ec1d44d.chunk.js.LICENSE.txt": "/black-thoughts/static/js/2.9ec1d44d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7b89ae61.js",
     "static/js/2.9ec1d44d.chunk.js",
-    "static/css/main.d8389573.chunk.css",
-    "static/js/main.e151501b.chunk.js"
+    "static/css/main.ee63fb94.chunk.css",
+    "static/js/main.4fa6cd1e.chunk.js"
   ]
 }
