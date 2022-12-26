@@ -1,10 +1,6 @@
 const mongoose = require('mongoose')
 
 const ThoughtSchema = mongoose.Schema( {
-    id: {
-        type: Number,
-        required: false
-    },
     title: {
         type: String,
         required: true

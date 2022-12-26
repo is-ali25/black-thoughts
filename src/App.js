@@ -4,6 +4,7 @@ import Graph from './Components/Graph'
 import Overview from './Components/Overview'
 import Submission from './Components/Submission'
 
+
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 
@@ -33,14 +34,21 @@ function App() {
   })
 
   //gets data from database on startup, then uses said data to update the nodes state array
-  useEffect(async () => {
-    await axios.get('http://localhost:5000/')
-    .then(res => {
-      if(res.data.length > 0) {
-        setNodes(Utils.nodeAddition(res.data))
-      }
-    })
-    .catch(err => console.error(err))
+  useEffect(() => {
+
+    const start = async () => {
+      await axios.get('https://black-thoughts-backend.onrender.com/')
+      .then(res => {
+        if(res.data.length > 0) {
+          console.log("got the goods")
+          setNodes(Utils.nodeAddition(res.data))
+        }
+      })
+      .catch(err => console.error(err))
+    }
+
+    start()
+    
   }, [])
 
   //create a HashMap whose keys are authors and whose values are arrays entailing the id's of the nodes which reference that author
@@ -85,7 +93,7 @@ function App() {
   //formHandler function (adds new node with appropriate edges to the graph)
   const formHandler = async (e) => {
     e.preventDefault()
-    await axios.post('http://localhost:5000/add', submissionData)
+    await axios.post('https://black-thoughts-backend.onrender.com/add', submissionData)
         .then(res => {
           setNodes(nodes.push(Utils.createNode(res.data, nodes.length)))
     }).catch(err => console.error(err))

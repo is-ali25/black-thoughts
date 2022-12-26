@@ -4,10 +4,19 @@ const express = require('express')
 const cors = require('cors')
 require('body-parser')
 require('dotenv').config()
+const path = require(path)
 
 //initiate server
 const app = express()
 const port = 5000
+
+if (process.env.NODE_DEV === 'production') {
+    app.use(express.static('clinet/build'))
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    })
+}
 
 //middleware
 app.use(cors())
@@ -24,7 +33,7 @@ app.get('/', async (req, res) => {
     try {
         const Thoughts = await Thought.find()
         res.status(200).json(Thoughts)
-        // console.log("successful get request")
+        console.log("successful get request")
         // res.send("Hello World")
     } catch (error) {
         res.status(404).json({message: error.message})

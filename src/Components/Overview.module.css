@@ -8,6 +8,7 @@
     animation-duration: 1000ms;
     animation-timing-function: ease-out;
     white-space: pre-wrap;
+    padding: 2rem;
 
     /* border: solid 4px goldenrod; */
 }
