@@ -4,19 +4,19 @@ const express = require('express')
 const cors = require('cors')
 require('body-parser')
 require('dotenv').config()
-const path = require(path)
+// const path = require(path)
 
 //initiate server
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000
 
-if (process.env.NODE_DEV === 'production') {
-    app.use(express.static('clinet/build'))
+// if (process.env.NODE_DEV === 'production') {
+//     app.use(express.static('client/build'))
 
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-    })
-}
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+//     })
+// }
 
 //middleware
 app.use(cors())
