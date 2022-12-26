@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/black-thoughts/static/css/main.ee63fb94.chunk.css",
-    "main.js": "/black-thoughts/static/js/main.4fa6cd1e.chunk.js",
-    "main.js.map": "/black-thoughts/static/js/main.4fa6cd1e.chunk.js.map",
+    "main.js": "/black-thoughts/static/js/main.7d97ea27.chunk.js",
+    "main.js.map": "/black-thoughts/static/js/main.7d97ea27.chunk.js.map",
     "runtime-main.js": "/black-thoughts/static/js/runtime-main.7b89ae61.js",
     "runtime-main.js.map": "/black-thoughts/static/js/runtime-main.7b89ae61.js.map",
     "static/js/2.9ec1d44d.chunk.js": "/black-thoughts/static/js/2.9ec1d44d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7b89ae61.js",
     "static/js/2.9ec1d44d.chunk.js",
     "static/css/main.ee63fb94.chunk.css",
-    "static/js/main.4fa6cd1e.chunk.js"
+    "static/js/main.7d97ea27.chunk.js"
   ]
 }
